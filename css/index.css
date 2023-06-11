@@ -1,0 +1,200 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ol, ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	min-width: 1000px;
+}
+body{
+	    font: 14px/1.6 "Microsoft Yahei";
+	    background: url(../img/pcbg.png?v=1.0) no-repeat center bottom;
+	    background-size: cover;
+		position: relative;
+		height: 100%;
+}
+.logo{
+	width: 400px;
+	height: 100px;
+	position: fixed;
+	top: 10px;
+	left: 51.2%;
+	transform: translateX(-51.2%);
+
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.btnBox{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	right: 50%;
+	width: 750px;
+	bottom: 380px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transform: translateX(-50%) translateY(0%);
+}
+.titleImg{
+	position: absolute;
+	bottom: 130px;
+	width: 100%;
+	text-align: center;
+	
+	left: 0;
+	right: 0;
+}
+.titleImg img{
+	margin: 0 auto;
+}
+.btnBox img{
+	display: block;
+	/* margin-top: 40px; */
+}
+.navBtn{
+	position: relative;
+	cursor: pointer;
+	padding-top: 30px;
+}
+.kfBtn{
+	padding-top: 30px;
+}
+
+.jsBox{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 90px;
+	width: 730px;
+	background: rgba(179,10,10,.9);
+	border: 1px #f60 solid;
+	padding-top: 30px;
+	padding-left: 27px;
+	padding-bottom: 18px;
+	padding-right: 27px;
+}
+.navBtn:hover .jsBox{
+	display: block;
+}
+.jsImg{
+	position: absolute;
+	left: 152px;
+	bottom: -13px;
+}
+
+.ulList li{
+	height: 45px;
+	margin-bottom: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ulList li span.ms{
+	width: 80px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 20px;
+	color: #b91f1b;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+
+.ulList li a.ms{
+	width: 80px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 20px;
+	color: #b91f1b;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+.ulList li .url{
+	padding:0 20px;
+	flex: 1;
+	margin: 0 10px;
+	line-height: 45px;
+	font-size: 20px;
+	color: #b91f1b;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ulList li .url img{
+	width: 30px;
+}
+.ulList li .url span{
+	padding: 0 10px;
+}
+
+.ulList li .url:hover{
+	background-color:#f60;
+	color: #fff;
+}
+
+.hand-left{
+	animation: handLeft 0.3s infinite alternate;
+}
+.hand-right{
+	animation: handRight 0.3s infinite alternate;
+}
+@keyframes handLeft {
+  from {transform:translateX(0)}
+  to {transform:translateX(-5px)}
+}
+@keyframes handRight {
+  from {transform:translateX(0)}
+  to {transform:translateX(5px)}
+}
+
+.ulList li a{
+	padding: 0 15px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: #b91f1b;
+	font-size: 20px;
+	background-color: #ffff66;
+}
+.ulList li a:hover{
+	background-color:#f60;
+	color: #b91f1b;
+}
+.ulList li .url img{
+	width: 30px;
+}
+.hand-left{
+	animation: handLeft 0.3s infinite alternate;
+}
+.hand-right{
+	animation: handRight 0.3s infinite alternate;
+}
+@keyframes handLeft {
+  from {transform:translateX(0)}
+  to {transform:translateX(-5px)}
+}
+@keyframes handRight {
+  from {transform:translateX(0)}
+  to {transform:translateX(5px)}
+}
